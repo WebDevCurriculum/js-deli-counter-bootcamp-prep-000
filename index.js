@@ -26,15 +26,17 @@ function nowServing(array){
 }
 
 function currentLine(line) {
-    var linePosition = line.length;
+  var linePosition = line.length;
+
     var customer = "";
     for(var i = 0; i < line.length; i++){
         customer +=  `${i + 1}. ${line[i]}, `;
+        if(i == line.length) {
+        customer += `${i + 1}. ${line[i]}`;
+    }
   }
-    if(i == line.length){
-      customer += `${i + 1}. ${line[i]}`;
-}
-  else if(linePosition == 0) {
+
+  if(linePosition == 0) {
     return "The line is currently empty."
   }
       else {
