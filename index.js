@@ -31,8 +31,7 @@ function currentLine(line) {
     var customer = "";
     for(var i = 0; i < line.length; i++){
         customer +=  `${i + 1}. ${line[i]}, `;
-        if(i == line.length - 1) {
-        customer += `${i + 1}. ${line[i]}`;
+        trim(line, ',');
     }
   }
   if(linePosition == 0) {
