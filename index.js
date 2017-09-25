@@ -27,7 +27,7 @@ function nowServing(array){
 
 function currentLine(line) {
   var linePosition = line.length;
-  /*var customerName = line.shift();*/
+
   if(linePosition == 0) {
     return "The line is currently empty."
   }
