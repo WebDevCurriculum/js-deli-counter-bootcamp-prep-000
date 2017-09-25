@@ -33,7 +33,7 @@ function currentLine(line) {
         customer +=  `${i + 1}. ${line[i]}, `;
         customer.trim(',');
     }
-  }
+  
   if(linePosition == 0) {
     return "The line is currently empty."
   }
