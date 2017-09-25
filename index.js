@@ -38,7 +38,7 @@ function currentLine(line) {
   if(linePosition == 0) {
     return "The line is currently empty."
   }
-      if(i == line.length - 1) {
+      else if(i == line.length - 1) {
           customer += `${i + 1}. ${line[i]}`;
     }
    return `The line is currently: ${customer}`
