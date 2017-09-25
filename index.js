@@ -35,7 +35,7 @@ function currentLine(line) {
     for(var i = 0; i < line.length; i++){
         customer +=  `${i + 1}. ${line[i]}, `;
   }
-    else if(i == line.length) {
+      if(i == line.length) {
       customer += `${i + 1}. ${line[i]}`;
     }
    return `The line is currently: ${customer}`
