@@ -35,7 +35,6 @@ function currentLine(line) {
         customer += `${i + 1}. ${line[i]}`;
     }
   }
-
   if(linePosition == 0) {
     return "The line is currently empty."
   }
