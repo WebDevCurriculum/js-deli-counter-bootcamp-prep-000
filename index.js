@@ -34,7 +34,7 @@ function currentLine(line) {
     var customer = "";
     for(var i = 0; i < line.length; i++){
         customer +=  `${i + 1}. ${line[i]}, `;
-    while (i == line.lenghth) {
+    while (i == line.length) {
         customer += `${i + 1}. ${line[i]}`;
     }
   }
