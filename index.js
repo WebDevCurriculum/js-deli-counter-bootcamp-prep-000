@@ -33,7 +33,7 @@ function currentLine(line) {
         customer +=  `${i + 1}. ${line[i]}, `;
         
   }
-  if(i == line.length) {
+  if(i == line.length){
   customer += `${i + 1}. ${line[i]}`;
 }
   else if(linePosition == 0) {
