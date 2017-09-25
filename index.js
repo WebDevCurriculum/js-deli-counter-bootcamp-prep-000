@@ -31,9 +31,11 @@ function currentLine(line) {
   if(linePosition == 0) {
     return "The line is currently empty."
   }
-    for(var i = 1; i < line.length; i++){
+    var customer = "";
+    for(var i = 0; i < line.length; i++){
 
-    return `The line is currently: ${i}. ${line[i - 1],}`
-  }
+    customer +=  `${i + 1}. ${line[i]} `;
 
+    }
+   return `The line is currently: ${customer}`
 }
