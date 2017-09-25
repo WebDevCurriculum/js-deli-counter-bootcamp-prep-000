@@ -39,7 +39,6 @@ function currentLine(line) {
     }
   }
 
-
   if(linePosition == 0) {
     return "The line is currently empty."
   }
