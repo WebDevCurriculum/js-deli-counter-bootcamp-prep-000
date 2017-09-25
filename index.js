@@ -36,7 +36,7 @@ function currentLine(line) {
         customer +=  `${i + 1}. ${line[i]}, `;
   }
       if(i == line.length - 1) {
-    /*  customer += `${i + 1}. ${line[i]}`; */
+          customer += `${i + 1}. ${line[i]}`;
     }
    return `The line is currently: ${customer}`
 }
