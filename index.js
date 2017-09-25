@@ -32,7 +32,7 @@ function currentLine(line) {
     for(var i = 0; i < line.length; i++){
         customer +=  `${i + 1}. ${line[i]}, `;
         if(i == line.length - 1) {
-        customer.trim();
+        customer = customer.replace(/,\s*$/, "")
     }
   }
   if(linePosition == 0) {
